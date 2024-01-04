@@ -1,25 +1,39 @@
-﻿namespace Restoran_Yonetim_Sistemi_v2
+﻿using Restoran_Yonetim_Sistemi_v2.Sayfalar;
+
+namespace Restoran_Yonetim_Sistemi_v2
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+       
+       
 
         public MainPage()
         {
             InitializeComponent();
         }
+     
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
-            count++;
+            string username = UsernameEntry.Text;
+            string password = PasswordEntry.Text;
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
+            if (username == "admin" && password == "1234")
+            {
+
+                await Navigation.PushAsync(new AnaSayfa());
+
+            }
             else
-                CounterBtn.Text = $"Clicked {count} times";
+            {
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+                await DisplayAlert("Uyarı", "Geçersiz kullanıcı adı veya şifre", "Tamam");
+
+            }
+
         }
+
+       
     }
 
 }

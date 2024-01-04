@@ -4,9 +4,21 @@
              x:Class="Restoran_Yonetim_Sistemi_v2.Sayfalar.Hakkimizda"
              Title="Hakkimizda">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
+        <Label
+           Text="1979 yılında kurulan Pagmat, kuru meyve sektöründe, 
+            konvansiyonel ve organik kurutulmuş meyve ve yan ürünlerini 
+            üreterek faaliyet göstermektedir. Ana ürünler arasında kuru üzüm, kayısı, 
+            incir ve kuru meyve karışımları ile bütün, doğranmış ve salçalı seçenekler yer alıyor.
+            Pagmat'ın üretim tesisi, Batı Türkiye'nin Ege bölgesindeki yetiştirme bölgelerinin kalbinde yer almaktadır. 
+            Pagmat kalite, yenilik ve hizmet açısından Türk kurutulmuş gıda sektöründe lider konumdadır. 
+            Endüstri, yetiştiriciler, üniversite ve araştırma enstitüleri arasında güçlü bir işbirliği ve 
+            bağlantı kuran Pagmat, birçok projeye öncülük etmekte ve yetiştiricilerin eğitilmesine, tavsiye edilmesine ve izlenmesine yardımcı olmaktadır. Bu, 
+            şirkete sahadan müşteriye kadar olan zinciri kontrol etme konusunda eşsiz bir fırsat veriyor."        
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center" >
+        </Label>
+
+        
+        
     </VerticalStackLayout>
 </ContentPage>

@@ -4,9 +4,44 @@
              x:Class="Restoran_Yonetim_Sistemi_v2.Sayfalar.AnaSayfa"
              Title="AnaSayfa">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button
+                 x:Name="btn"
+                   Grid.Row="1"           
+              Text="hakkımızda" 
+                 Clicked="btn_Clicked"
+                 Grid.Column="2" 
+                HorizontalOptions="Center"
+            />
+
+
+            <Button
+                
+                x:Name="masalar"
+                Grid.Row="1"
+                Text="masalar"
+                Clicked="masalar_Clicked"
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                
+                />
+
+
+
+        </Grid>
+
+
+
     </VerticalStackLayout>
 </ContentPage>

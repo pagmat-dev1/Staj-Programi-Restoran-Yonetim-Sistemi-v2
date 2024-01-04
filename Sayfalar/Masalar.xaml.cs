@@ -6,4 +6,14 @@ public partial class Masalar : ContentPage
 	{
 		InitializeComponent();
 	}
+
+   
+
+    private async void masa1_Clicked_1(object sender, EventArgs e)
+    {
+
+        await Navigation.PushAsync(new Masa1());
+
+
+    }
 }
